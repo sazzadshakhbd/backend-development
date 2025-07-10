@@ -6,7 +6,10 @@
 
 // var arr = [1, "sazzad", true, null, undefined, { name: "sazzad"}, function(){}, [1, 2], 1.5, NaN];
 var arr = [1, 2, 3, 4];
-arr.forEach(function(val){
-    // console.log(val + 1)
-    console.log(val + " Hello World");
+var ans = arr.map(function(val){
+    // return 13;
+    // return val;
+    return val + 1
+
 })
+console.log(ans)
