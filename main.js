@@ -6,8 +6,11 @@
 
 // var arr = [1, "sazzad", true, null, undefined, { name: "sazzad"}, function(){}, [1, 2], 1.5, NaN];
 
-function getValue() {
-    return  7
-}
-console.log(getValue()); // 7
 
+async function abcd() {
+    var blob = await fetch("https://randomuser.me/api/");
+    var ans = await blob.json();
+    console.log(ans.results[0].name);
+}
+
+abcd();
